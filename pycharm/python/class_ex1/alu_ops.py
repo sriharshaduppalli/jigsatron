@@ -14,6 +14,8 @@ class Aluops:
             self.ans = self.num1 - self.num2
         if ops == "mul":
             self.ans = self.num1 * self.num2
+        if ops == "div":
+            self.ans = self.num1 / self.num2
 
         print("{} of two numbers = " .format(ops) + str(self.ans))
 
@@ -26,3 +28,6 @@ obj.calculate("sub")
 
 obj = Aluops(50, 20)
 obj.calculate("mul")
+
+obj = Aluops(50, 20)
+obj.calculate("div")
